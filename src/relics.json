@@ -1,0 +1,808 @@
+{
+  "Anchor": {
+    "Description": "Start each combat with 10 Block. ",
+    "Energy": "",
+    "Name": "Anchor",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Ancient Tea Set": {
+    "Description": "Whenever you enter a Rest Site, start the next combat with 2 Energy. ",
+    "Energy": "",
+    "Name": "Ancient Tea Set",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Art of War": {
+    "Description": "If you do not play any Attacks during your turn, gain an extra Energy next turn. ",
+    "Energy": "",
+    "Name": "Art of War",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Astrolabe": {
+    "Description": "Upon pickup, choose and Transform 3 cards, then Upgrade them. ",
+    "Energy": "",
+    "Name": "Astrolabe",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  "Bag of Marbles": {
+    "Description": "At the start of each combat, apply 1 Vulnerable to ALL enemies. ",
+    "Energy": "",
+    "Name": "Bag of Marbles",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Bag of Preparation": {
+    "Description": "At the start of each combat, draw 2 additional cards. ",
+    "Energy": "",
+    "Name": "Bag of Preparation",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Bird-Faced Urn": {
+    "Description": "Whenever you play a Power, heal 2 HP. ",
+    "Energy": "",
+    "Name": "Bird-Faced Urn",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Black Blood": {
+    "Description": "Replaces Burning Blood. At the end of combat, heal 10 HP. ",
+    "Energy": "",
+    "Name": "Black Blood",
+    "Rarity": "Boss (Ironclad)",
+    "Type": "Relic"
+  },
+  "Black Star": {
+    "Description": "Elites now drop 2 Relics when defeated. ",
+    "Energy": "",
+    "Name": "Black Star",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },  
+  "Blood Vial": {
+    "Description": "At the start of each combat, heal 2 HP. ",
+    "Energy": "",
+    "Name": "Blood Vial",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Bloody Idol": {
+    "Description": "Whenever you gain Gold, heal 5 HP. ",
+    "Energy": "",
+    "Name": "Bloody Idol",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+    "Blue Candle": {
+    "Description": "Curse cards can now be played. Playing a Curse will make you lose 1 HP and Exhausts the card. ",
+    "Energy": "",
+    "Name": "Blue Candle",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Bottled Flame": {
+    "Description": "Upon pick up, choose an Attack card. At the start of each combat, this card will be in your hand. ",
+    "Energy": "",
+    "Name": "Bottled Flame",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Bottled Lightning": {
+    "Description": "Upon pick up, choose a Skill card. At the start of each combat, this card will be in your hand. ",
+    "Energy": "",
+    "Name": "Bottled Lightning",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Bottled Tornado": {
+    "Description": "Upon pick up, choose a Power card. At the start of each combat, this card will be in your hand. ",
+    "Energy": "",
+    "Name": "Bottled Tornado",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Bronze Scales": {
+    "Description": "Whenever you take damage, deal 3 damage back. ",
+    "Energy": "",
+    "Name": "Bronze Scales",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Burning Blood": {
+    "Description": "At the end of combat, heal 6 HP. ",
+    "Energy": "",
+    "Name": "Burning Blood",
+    "Rarity": "Starter (Ironclad)",
+    "Type": "Relic"
+  },
+    "Calipers": {
+    "Description": "At the start of your turn, lose 15 Block rather than all of your Block. ",
+    "Energy": "",
+    "Name": "Calipers",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Calling Bell": {
+    "Description": "Obtain 3 Curses and 3 Relics. ",
+    "Energy": "",
+    "Name": "Calling Bell",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Cauldron": {
+    "Description": "When obtained, brews 5 random potions. ",
+    "Energy": "",
+    "Name": "Cauldron",
+    "Rarity": "Shop",
+    "Type": "Relic"
+  },
+  "Centennial Puzzle": {
+    "Description": "The first time you lose HP each combat, draw 3 cards. ",
+    "Energy": "",
+    "Name": "Centennial Puzzle",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Champion Belt": {
+    "Description": "Whenever you apply Vulnerable, also apply 1 Weak. ",
+    "Energy": "",
+    "Name": "Champion Belt",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Charon's Ashes": {
+    "Description": "Whenever you Exhaust a card, deal 3 damage to ALL enemies. ",
+    "Energy": "",
+    "Name": "Charon's Ashes",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Cursed Key": {
+    "Description": "Gain 1 Energy at the start of each turn. Whenever you open a non-boss chest, obtain a Curse. ",
+    "Energy": "",
+    "Name": "Cursed Key",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Darkstone Periapt": {
+    "Description": "Whenever you obtain a Curse, increase your Max HP by 6. ",
+    "Energy": "",
+    "Name": "Darkstone Periapt",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Dead Branch": {
+    "Description": "Whenever you Exhaust a card, add a random card to your hand. ",
+    "Energy": "",
+    "Name": "Dead Branch",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Dream Catcher": {
+    "Description": "Whenever you rest, you may add a card to your deck. ",
+    "Energy": "",
+    "Name": "Dream Catcher",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Du-Vu Doll": {
+    "Description": "For each Curse in your deck, start each combat with 1 additional Strength. ",
+    "Energy": "",
+    "Name": "Du-Vu Doll",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Ectoplasm": {
+    "Description": "Gain 1 Energy at the start of each turn. You can no longer gain Gold. ",
+    "Energy": "",
+    "Name": "Ectoplasm",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  "Enchiridion": {
+    "Description": "Start each combat with a random Power card in your hand. It costs 0 until the end of turn. ",
+    "Energy": "",
+    "Name": "Enchiridion",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+    "Eternal Feather": {
+    "Description": "For every 5 cards in your deck, heal 2 HP whenever you enter a Rest Site. ",
+    "Energy": "",
+    "Name": "Eternal Feather",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Frozen Egg": {
+    "Description": "Whenever you add a Power card to your deck, it is Upgraded. ",
+    "Energy": "",
+    "Name": "Frozen Egg",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Frozen Eye": {
+    "Description": "When viewing your Draw Pile, the cards are now shown in order. ",
+    "Energy": "",
+    "Name": "Frozen Eye",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Gambling Chip": {
+    "Description": "At the start of each combat, discard any number of cards then draw that many. ",
+    "Energy": "",
+    "Name": "Gambling Chip",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Ginger": {
+    "Description": "You can no longer become Weakened. ",
+    "Energy": "",
+    "Name": "Ginger",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Girya": {
+    "Description": "You can now gain Strength at Rest Sites. (3 times max) ",
+    "Energy": "",
+    "Name": "Girya",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Golden Idol": {
+    "Description": "Enemies drop 25% more Gold. ",
+    "Energy": "",
+    "Name": "Golden Idol",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+    "Gremlin Horn": {
+    "Description": "Whenever an enemy dies, gain 1 Energy and draw 1 card. ",
+    "Energy": "",
+    "Name": "Gremlin Horn",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Happy Flower": {
+    "Description": "Every 3 turns, gain 1 Energy. ",
+    "Energy": "",
+    "Name": "Happy Flower",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Ice Cream": {
+    "Description": "Energy is now conserved between turns. ",
+    "Energy": "",
+    "Name": "Ice Cream",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Juzu Bracelet": {
+    "Description": "Regular enemy combats are no longer encountered in ? rooms. ",
+    "Energy": "",
+    "Name": "Juzu Bracelet",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Kunai": {
+    "Description": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity. ",
+    "Energy": "",
+    "Name": "Kunai",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Lantern": {
+    "Description": "Gain 1 Energy on the first turn of each combat. ",
+    "Energy": "",
+    "Name": "Lantern",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Lee's Waffle": {
+    "Description": "Raise your Max HP by 7 and heal all of your HP. ",
+    "Energy": "",
+    "Name": "Lee's Waffle",
+    "Rarity": "Shop",
+    "Type": "Relic"
+  },
+    "Letter Opener": {
+    "Description": "Every time you play 3 Skills in a single turn, deal 5 damage to ALL enemies. ",
+    "Energy": "",
+    "Name": "Letter Opener",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Lizard Tail": {
+    "Description": "When you would die, heal to 50% of your Max HP instead (works once). ",
+    "Energy": "",
+    "Name": "Lizard Tail",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Magic Flower": {
+    "Description": "Healing is 50% more effective during combat. ",
+    "Energy": "",
+    "Name": "Magic Flower",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Mango": {
+    "Description": "Raise your Max HP by 14. ",
+    "Energy": "",
+    "Name": "Mango",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Mark of Pain": {
+    "Description": "Gain 1 Energy at the start of each turn. Start combats with 2 Wounds in your draw pile. ",
+    "Energy": "",
+    "Name": "Mark of Pain",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Matryoshka": {
+    "Description": "The next 2 chests you open contain 2 Relics. (Excludes boss chests) ",
+    "Energy": "",
+    "Name": "Matryoshka",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Meat on the Bone": {
+    "Description": "If your HP is at or below 50% at the end of combat, heal 12 HP. ",
+    "Energy": "",
+    "Name": "Meat on the Bone",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Medical Kit": {
+    "Description": "Status cards can now be played. Playing a Status will Exhaust the card. ",
+    "Energy": "",
+    "Name": "Medical Kit",
+    "Rarity": "Shop",
+    "Type": "Relic"
+  },
+  "Membership Card": {
+    "Description": "In future acts, shops appear 50% more often. BONUS: 20% discount on all products! ",
+    "Energy": "",
+    "Name": "Membership Card",
+    "Rarity": "Shop",
+    "Type": "Relic"
+  },
+  "Mercury Hourglass": {
+    "Description": "At the start of your turn, deal 3 damage to ALL enemies. ",
+    "Energy": "",
+    "Name": "Mercury Hourglass",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Molten Egg": {
+    "Description": "Whenever you add an Attack card to your deck, it is Upgraded. ",
+    "Energy": "",
+    "Name": "Molten Egg",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Mummified Hand": {
+    "Description": "Whenever you play a Power, a random card in your hand costs 0 for the turn. ",
+    "Energy": "",
+    "Name": "Mummified Hand",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Necronomicon": {
+    "Description": "The first Attack played each turn that costs 2 or more is played twice. When you take this relic, become Cursed. ",
+    "Energy": "",
+    "Name": "Necronomicon",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+    "Neow's Lament": {
+    "Description": "Enemies in your first 3 combats will have 1 HP. ",
+    "Energy": "",
+    "Name": "Neow's Lament",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+    "Nilry's Codex": {
+    "Description": "At the end of each turn, you can choose 1 of 3 random cards to shuffle into your draw pile. ",
+    "Energy": "",
+    "Name": "Nilry's Codex",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+  "Ninja Scroll": {
+    "Description": "Start each combat with 3 Shivs in hand. ",
+    "Energy": "",
+    "Name": "Ninja Scroll",
+    "Rarity": "Uncommon (Silent)",
+    "Type": "Relic"
+  },
+  "Nloth's Gift": {
+    "Description": "Triples the chance of receiving rare cards as monster rewards. ",
+    "Energy": "",
+    "Name": "Nloth's Gift",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+    "Odd Mushroom": {
+    "Description": "When Vulnerable, take 25% more damage rather than 50%. ",
+    "Energy": "",
+    "Name": "Odd Mushroom",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+  "Oddly Smooth Stone": {
+    "Description": "At the start of each combat, gain 1 Dexterity. ",
+    "Energy": "",
+    "Name": "Oddly Smooth Stone",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Old Coin": {
+    "Description": "Gain 300 Gold. ",
+    "Energy": "",
+    "Name": "Old Coin",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Omamori": {
+    "Description": "Negate the next 2 Curses you obtain. ",
+    "Energy": "",
+    "Name": "Omamori",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Orichalcum": {
+    "Description": "If you end your turn without Block, gain 6 Block. ",
+    "Energy": "",
+    "Name": "Orichalcum",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Ornamental Fan": {
+    "Description": "Every time you play 3 Attacks in a single turn, gain 4 Block. ",
+    "Energy": "",
+    "Name": "Ornamental Fan",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Orrery": {
+    "Description": "Choose and add 5 cards to your deck. ",
+    "Energy": "",
+    "Name": "Orrery",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Pandora's Box": {
+    "Description": "Transform all Strikes and Defends. ",
+    "Energy": "",
+    "Name": "Pandora's Box",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  "Pantograph": {
+    "Description": "At the start of boss combats, heal 25 HP. ",
+    "Energy": "",
+    "Name": "Pantograph",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Paper Krane": {
+    "Description": "Enemies with Weak deal 50% less damage rather than 25%. ",
+    "Energy": "",
+    "Name": "Paper Krane",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Paper Phrog": {
+    "Description": "Enemies with Vulnerable take 75% more damage rather than 50%. ",
+    "Energy": "",
+    "Name": "Paper Phrog",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Peace Pipe": {
+    "Description": "You can now remove cards from your deck at Rest Sites. ",
+    "Energy": "",
+    "Name": "Peace Pipe",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Pear": {
+    "Description": "Raise your Max HP by 10. ",
+    "Energy": "",
+    "Name": "Pear",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Pen Nib": {
+    "Description": "Every 10th Attack you play deals double damage. ",
+    "Energy": "",
+    "Name": "Pen Nib",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Philosopher's Stone": {
+    "Description": "Gain 1 Energy at the start of each turn. ALL enemies start with 2 Strength. ",
+    "Energy": "",
+    "Name": "Philosopher's Stone",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Prayer Wheel": {
+    "Description": "Non-Boss chests now also contain cards. ",
+    "Energy": "",
+    "Name": "Prayer Wheel",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Question Card": {
+    "Description": "On Card Reward screens, choose from 4 cards instead of 3. ",
+    "Energy": "",
+    "Name": "Question Card",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Red Mask": {
+    "Description": "At the start of each combat, apply 1 Weak to ALL enemies. ",
+    "Energy": "",
+    "Name": "Red Mask",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+  "Red Skull": {
+    "Description": "While your HP is at or below 50%, you have 3 additional Strength. ",
+    "Energy": "",
+    "Name": "Red Skull",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Regal Pillow": {
+    "Description": "Heal an additional 15 HP when you rest. ",
+    "Energy": "",
+    "Name": "Regal Pillow",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Ring of the Snake": {
+    "Description": "At the start of each combat, draw 2 additional cards. ",
+    "Energy": "",
+    "Name": "Ring of the Snake",
+    "Rarity": "Starter (Silent)",
+    "Type": "Relic"
+  },
+  "Runic Cube": {
+    "Description": "Max HP is lowered by 20%. Whenever you lose HP, draw 1 card. ",
+    "Energy": "",
+    "Name": "Runic Cube",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Runic Dodecahedron": {
+    "Description": "If your HP is full, gain 1 Energy at the start of each turn. ",
+    "Energy": "",
+    "Name": "Runic Dodecahedron",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Runic Dome": {
+    "Description": "Gain 1 Energy at the start of each turn. You can no longer see enemy Intents. ",
+    "Energy": "",
+    "Name": "Runic Dome",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  "Runic Pyramid": {
+    "Description": "At the end of your turn, you no longer discard your hand. Draw 1 less card each turn. ",
+    "Energy": "",
+    "Name": "Runic Pyramid",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Self-Forming Clay": {
+    "Description": "Whenever you lose HP in combat, gain 3 Block next turn. ",
+    "Energy": "",
+    "Name": "Self-Forming Clay",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Shovel": {
+    "Description": "You can now Dig for loot at Rest Sites. ",
+    "Energy": "",
+    "Name": "Shovel",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Shuriken": {
+    "Description": "Every time you play 3 Attacks in a single turn, gain 1 Strength. ",
+    "Energy": "",
+    "Name": "Shuriken",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Singing Bowl": {
+    "Description": "Whenever you skip a card reward, increase your Max HP by 2. ",
+    "Energy": "",
+    "Name": "Singing Bowl",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Smiling Mask": {
+    "Description": "The merchant's card removal service now always costs 50 Gold. ",
+    "Energy": "",
+    "Name": "Smiling Mask",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Snecko Eye": {
+    "Description": "Draw 2 additional cards each turn. Start each combat Confused. ",
+    "Energy": "",
+    "Name": "Snecko Eye",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  "Snecko Skull": {
+    "Description": "Whenever you apply Poison, apply an additional 1 Poison. ",
+    "Energy": "",
+    "Name": "Snecko Skull",
+    "Rarity": "Common (Silent)",
+    "Type": "Relic"
+  },
+  "Sozu": {
+    "Description": "Gain 1 Energy at the start of each turn. You can no longer use potions. ",
+    "Energy": "",
+    "Name": "Sozu",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  "Spirit Poop": {
+    "Description": "It's unpleasant. ",
+    "Energy": "",
+    "Name": "Spirit Poop",
+    "Rarity": "Event",
+    "Type": "Relic"
+  },
+    "Strange Spoon": {
+    "Description": "Cards which Exhaust when played will instead discard 50% of the time. ",
+    "Energy": "",
+    "Name": "Strange Spoon",
+    "Rarity": "Shop",
+    "Type": "Relic"
+  },
+  "Strawberry": {
+    "Description": "Raise your Max HP by 7. ",
+    "Energy": "",
+    "Name": "Strawberry",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Sundial": {
+    "Description": "Every 3 times you shuffle your deck, gain 2 Energy. ",
+    "Energy": "",
+    "Name": "Sundial",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "The Courier": {
+    "Description": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by 20%. ",
+    "Energy": "",
+    "Name": "The Courier",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "The Specimen": {
+    "Description": "Whenever an enemy dies, transfer any Poison it has to a random enemy. ",
+    "Energy": "",
+    "Name": "The Specimen",
+    "Rarity": "Boss (Silent)",
+    "Type": "Relic"
+  },
+    "Thread and Needle": {
+    "Description": "At the start of each combat, gain 5 Plated Armor. ",
+    "Energy": "",
+    "Name": "Thread and Needle",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Tingsha": {
+    "Description": "Whenever you discard a card during your turn, deal 3 damage to a random enemy for each card discarded. ",
+    "Energy": "",
+    "Name": "Tingsha",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Tiny Chest": {
+    "Description": "Gain 30 Gold. You are 10% more likely to find treasure in ? rooms. ",
+    "Energy": "",
+    "Name": "Tiny Chest",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Tiny House": {
+    "Description": "Obtain 1 potion. Gain 30 Gold. Raise your Max HP by 5. Upgrade 1 random card. Obtain 1 card. ",
+    "Energy": "",
+    "Name": "Tiny House",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+    "Toolbox": {
+    "Description": "At the start of each combat, add a random colorless card to your hand. ",
+    "Energy": "",
+    "Name": "Toolbox",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+    "Torii": {
+    "Description": "Whenever you would receive 5 or less unblocked Attack damage, reduce it to 1. ",
+    "Energy": "",
+    "Name": "Torii",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+  "Tough Bandages": {
+    "Description": "Whenever you discard a card during your turn, gain 3 Block. ",
+    "Energy": "",
+    "Name": "Tough Bandages",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Toxic Egg": {
+    "Description": "Whenever you add a Skill card to your deck, it is Upgraded. ",
+    "Energy": "",
+    "Name": "Toxic Egg",
+    "Rarity": "Uncommon",
+    "Type": "Relic"
+  },
+  "Toy Ornithopter": {
+    "Description": "Whenever you use a potion, heal 3 HP.",
+    "Energy": "",
+    "Name": "Toy Ornithopter",
+    "Rarity": "Shop",
+    "Type": "Relic"
+  },
+    "Unceasing Top": {
+    "Description": "Whenever you have no cards in hand during your turn, draw a card. ",
+    "Energy": "",
+    "Name": "Unceasing Top",
+    "Rarity": "Rare",
+    "Type": "Relic"
+  },
+    "Vajra": {
+    "Description": "At the start of each combat, gain 1 Strength. ",
+    "Energy": "",
+    "Name": "Vajra",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+  "Velvet Choker": {
+    "Description": "Gain 1 Energy at the start of each turn. You cannot play more than 6 cards per turn. ",
+    "Energy": "",
+    "Name": "Velvet Choker",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  "War Paint": {
+    "Description": "Upon pick up, Upgrade 2 random Skills. ",
+    "Energy": "",
+    "Name": "War Paint",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "Whetstone": {
+    "Description": "Upon pick up, Upgrade 2 random Attacks. ",
+    "Energy": "",
+    "Name": "Whetstone",
+    "Rarity": "Common",
+    "Type": "Relic"
+  },
+    "White Beast Statue": {
+    "Description": "Potions always drop after combat. ",
+    "Energy": "",
+    "Name": "White Beast Statue",
+    "Rarity": "Boss",
+    "Type": "Relic"
+  },
+  
+}

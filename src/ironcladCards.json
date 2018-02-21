@@ -1,0 +1,792 @@
+{
+  "redCards": {
+    "Anger": {
+      "Description": "Deal 4 (6) damage. Place a copy of this card in your discard pile. ",
+      "Energy": "0",
+      "Name": "Anger",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Armaments": {
+      "Description": "Gain 5 Block. Upgrade a (ALL) card(s) in your hand for the rest of combat. ",
+      "Energy": "1",
+      "Name": "Armaments",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Barricade": {
+      "Description": "Block no longer expires at the start of your turn. ",
+      "Energy": "3 (2)",
+      "Name": "Barricade",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Bash": {
+      "Description": "Deal 8 (10) damage. Apply Vulnerable for 2 (3) turns. ",
+      "Energy": "2",
+      "Name": "Bash",
+      "Rarity": "Basic",
+      "Type": "Attack"
+    },
+    "Battle Trance": {
+      "Description": "Draw 3 (4) cards. You cannot draw additional cards this turn. ",
+      "Energy": "0",
+      "Name": "Battle Trance",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Berserk": {
+      "Description": "If your HP is below 50%, gain 1 energy at the start of each turn. ",
+      "Energy": "1 (0)",
+      "Name": "Berserk",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Blood for Blood": {
+      "Description": "Cost 1 less energy for each time you lose HP in combat. Deal 16 (18) damage. ",
+      "Energy": "4",
+      "Name": "Blood for Blood",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Bloodletting": {
+      "Description": "Gain 1 (2) energy. Lose 3 HP. ",
+      "Energy": "0",
+      "Name": "Bloodletting",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Bludgeon": {
+      "Description": "Deal 32 (42) damage. ",
+      "Energy": "3",
+      "Name": "Bludgeon",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Body Slam": {
+      "Description": "Deal damage equal to your current Block. ",
+      "Energy": "1 (0)",
+      "Name": "Body Slam",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Brutality": {
+      "Description": "(Innate) At the start of your turn, lose 1 HP and draw 1 card. ",
+      "Energy": "0",
+      "Name": "Brutality",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Burning Pact": {
+      "Description": "Exhaust 1 card. Draw 2 (3) cards. ",
+      "Energy": "1",
+      "Name": "Burning Pact",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Carnage": {
+      "Description": "Ethereal. Deal 18 (26) damage. ",
+      "Energy": "2",
+      "Name": "Carnage",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Clash": {
+      "Description": "Can only be played if every card in your hand is an Attack. Deal 14 (18) damage. ",
+      "Energy": "0",
+      "Name": "Clash",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Cleave": {
+      "Description": "Deal 7 (10) damage to ALL enemies. ",
+      "Energy": "1",
+      "Name": "Cleave",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Clothesline": {
+      "Description": "Deal 12 (14) damage. Apply 2 (3) Weak. ",
+      "Energy": "2",
+      "Name": "Clothesline",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Combust": {
+      "Description": "At the end of your turn, lose 1 HP and deal 4 (5) damage to ALL enemies. ",
+      "Energy": "1",
+      "Name": "Combust",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Corruption": {
+      "Description": "Skills cost 0. Whenever you play a Skill, Exhaust it. ",
+      "Energy": "3 (2)",
+      "Name": "Corruption",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Dark Embrace": {
+      "Description": "Whenever a card is Exhausted, draw 1 card. ",
+      "Energy": "2 (1)",
+      "Name": "Dark Embrace",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Defend": {
+      "Description": "Gain 5 (8) Block. ",
+      "Energy": "1",
+      "Name": "Defend",
+      "Rarity": "Basic",
+      "Type": "Skill"
+    },
+    "Demon Form": {
+      "Description": "At the start of each turn, gain 2 (3) Strength. ",
+      "Energy": "3",
+      "Name": "Demon Form",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Disarm": {
+      "Description": "Enemy loses 2 (3) Strength. Exhaust. ",
+      "Energy": "1",
+      "Name": "Disarm",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Double Tap": {
+      "Description": "This turn, your next (2) Attack(s) is played twice. ",
+      "Energy": "1",
+      "Name": "Double Tap",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Dropkick": {
+      "Description": "Deal 5 (8) damage. If the target is Vulnerable, gain 1 energy and draw 1 card. ",
+      "Energy": "1",
+      "Name": "Dropkick",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Dual Wield": {
+      "Description": "Create a (2) copy(s) of an Attack or Power card in your hand. ",
+      "Energy": "1",
+      "Name": "Dual Wield",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Entrench": {
+      "Description": "Double your current Block. ",
+      "Energy": "2 (1)",
+      "Name": "Entrench",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Evolve": {
+      "Description": "Shuffle 2 Wounds into your draw pile. Whenever you draw a Wound, draw 1 (2) card(s). ",
+      "Energy": "1",
+      "Name": "Evolve",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Exhume": {
+      "Description": "Choose an Exhausted card and put it in your hand. Exhaust. ",
+      "Energy": "1 (0)",
+      "Name": "Exhume",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Feed": {
+      "Description": "Deal 10 (12) damage. If this kills the enemy, gain 3 (4) permanent Max HP. Exhaust. ",
+      "Energy": "1",
+      "Name": "Feed",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Feel No Pain": {
+      "Description": "Whenever a card is Exhausted, gain 4 (6) Block. ",
+      "Energy": "1",
+      "Name": "Feel No Pain",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Fiend Fire": {
+      "Description": "Exhaust your hand. Deal 7 (10) damage for each Exhausted card. Exhaust. ",
+      "Energy": "2",
+      "Name": "Fiend Fire",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Fire Breathing": {
+      "Description": "At the end of your turn, for each Attack played this turn deal 1 damage to ALL enemies. ",
+      "Energy": "1 (0)",
+      "Name": "Fire Breathing",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Flame Barrier": {
+      "Description": "Gain 12 (16) Block. Whenever you are attacked this turn, deal 4 damage to the attacker. ",
+      "Energy": "2",
+      "Name": "Flame Barrier",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Flex": {
+      "Description": "Gain 2 (4) Strength. At the end of your turn, lose 2 (4) Strength. ",
+      "Energy": "0",
+      "Name": "Flex",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Ghostly Armor": {
+      "Description": "Ethereal. Gain 10 Block. ",
+      "Energy": "1",
+      "Name": "Ghostly Armor",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Havoc": {
+      "Description": "Play the top card of your draw pile and Exhaust it. ",
+      "Energy": "1 (0)",
+      "Name": "Havoc",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Headbutt": {
+      "Description": "Deal 9 (12) damage. Place a card from your discard pile on top of your draw pile. ",
+      "Energy": "1",
+      "Name": "Headbutt",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Heavy Blade": {
+      "Description": "Deal 14 damage. Strength affects Heavy Blade 3 (5) times. ",
+      "Energy": "2",
+      "Name": "Heavy Blade",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Hemokinesis": {
+      "Description": "Lose 3 (2) HP. Deal 14 (18) damage. ",
+      "Energy": "1",
+      "Name": "Hemokinesis",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Immolate": {
+      "Description": "Exhaust 1 card. If the chosen card was a Status or Curse, deal 10 (15) damage to ALL enemies. ",
+      "Energy": "1",
+      "Name": "Immolate",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Impervious": {
+      "Description": "Gain 30 (40) Block. Exhaust. ",
+      "Energy": "2",
+      "Name": "Impervious",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Infernal Blade": {
+      "Description": "Add a random Attack to your hand. It costs 0 this turn. Exhaust. ",
+      "Energy": "1 (0)",
+      "Name": "Infernal Blade",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Inflame": {
+      "Description": "Gain 2 (3) Strength. ",
+      "Energy": "1",
+      "Name": "Inflame",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Intimidate": {
+      "Description": "Apply 1 (2) Weak to ALL enemies. Exhaust. ",
+      "Energy": "0",
+      "Name": "Intimidate",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Iron Wave": {
+      "Description": "Gain 5 (7) Block. Deal 5 (7) damage. ",
+      "Energy": "1",
+      "Name": "Iron Wave",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Juggernaut": {
+      "Description": "Whenever you gain Block, deal 3 (5) damage to ALL enemies. ",
+      "Energy": "2",
+      "Name": "Juggernaut",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Limit Break": {
+      "Description": "Double your Strength. Exhaust (Don't Exhaust). ",
+      "Energy": "1",
+      "Name": "Limit Break",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Metallicize": {
+      "Description": "At the end of your turn, gain 3 (4) Block. ",
+      "Energy": "1",
+      "Name": "Metallicize",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Offering": {
+      "Description": "Lose 4 HP. Gain 2 energy. Draw 3 (5) cards. Exhaust. ",
+      "Energy": "0",
+      "Name": "Offering",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Perfected Strike": {
+      "Description": "Deal 6 damage. Deals an additional +2 (3) damage for ALL of your cards containing \"Strike\". ",
+      "Energy": "2",
+      "Name": "Perfected Strike",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Pommel Strike": {
+      "Description": "Deal 9 (10) damage. Draw 1 (2) card(s). ",
+      "Energy": "1",
+      "Name": "Pommel Strike",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Power Through": {
+      "Description": "Add 2 Wounds to your hand. Gain 15 (20) Block. ",
+      "Energy": "1",
+      "Name": "Power Through",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Pummel": {
+      "Description": "Deal 2 damage 4 (5) times. Exhaust. ",
+      "Energy": "1",
+      "Name": "Pummel",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Rage": {
+      "Description": "Whenever you play an Attack this turn, gain 4 (6) Block ",
+      "Energy": "1",
+      "Name": "Rage",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Rampage": {
+      "Description": "Deal 8 damage. Every time this card is played, increase its damage by 4 (8) for this combat. ",
+      "Energy": "1",
+      "Name": "Rampage",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Reaper": {
+      "Description": "Deal 4 (5) damage to ALL enemies. Heal for unblocked damage. Exhaust. ",
+      "Energy": "2",
+      "Name": "Reaper",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Reckless Charge": {
+      "Description": "Gain 1 Vulnerable. Deal 9 (12) damage. ",
+      "Energy": "0",
+      "Name": "Reckless Charge",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Rupture": {
+      "Description": "Whenever you lose HP from a card, gain 1 Strength. ",
+      "Energy": "1 (0)",
+      "Name": "Rupture",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Searing Blow": {
+      "Description": "Deal 12 (16+) damage. Can be upgraded any number of times. ",
+      "Energy": "2",
+      "Name": "Searing Blow",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Second Wind": {
+      "Description": "Exhaust all non-Attack cards in your hand and gain 5 (7) Block for each. ",
+      "Energy": "1",
+      "Name": "Second Wind",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Seeing Red": {
+      "Description": "Gain 2 energy. Exhaust. ",
+      "Energy": "1 (0)",
+      "Name": "Seeing Red",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Sentinel": {
+      "Description": "Gain 5 (8) Block. If this card is Exhausted, gain 2 (3) energy. ",
+      "Energy": "1",
+      "Name": "Sentinel",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Sever Soul": {
+      "Description": "Exhaust all non-Attack cards in your hand. Deal 16 (20) damage. ",
+      "Energy": "2",
+      "Name": "Sever Soul",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Shockwave": {
+      "Description": "Apply 3 (5) Weak and Vulnerable to ALL enemies. ",
+      "Energy": "2",
+      "Name": "Shockwave",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Shrug it Off": {
+      "Description": "Gain 8 (11) Block. Draw 1 card. ",
+      "Energy": "1",
+      "Name": "Shrug it Off",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Spot Weakness": {
+      "Description": "If an enemy intends to attack, gain 3 (4) Strength. ",
+      "Energy": "1",
+      "Name": "Spot Weakness",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Strike": {
+      "Description": "Deal 6 (9) damage. ",
+      "Energy": "1",
+      "Name": "Strike",
+      "Rarity": "Basic",
+      "Type": "Attack"
+    },
+    "Sword Boomerang": {
+      "Description": "Deal 3 damage to a random enemy 3 (4) times. ",
+      "Energy": "1",
+      "Name": "Sword Boomerang",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Thunderclap": {
+      "Description": "Deal 4 (7) damage and apply 1 Vulnerable to ALL enemies. ",
+      "Energy": "1",
+      "Name": "Thunderclap",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "True Grit": {
+      "Description": "Gain 7 (9) Block. Exhaust a random (not random) card from your hand. ",
+      "Energy": "1",
+      "Name": "True Grit",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Twin Strike": {
+      "Description": "Deal 5 (7) damage twice. ",
+      "Energy": "1",
+      "Name": "Twin Strike",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Uppercut": {
+      "Description": "Deal 13 damage. Apply 1 (2) Weak. Apply 1 (2) Vulnerable. ",
+      "Energy": "2",
+      "Name": "Uppercut",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Warcry": {
+      "Description": "Draw 1 (2) cards. Place a card from your hand on top of your draw pile. Exhaust. ",
+      "Energy": "0",
+      "Name": "Warcry",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Whirlwind": {
+      "Description": "Spend all energy. Deal 5 (8) damage to ALL enemies X times. ",
+      "Energy": "X",
+      "Name": "Whirlwind",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Wild Strike": {
+      "Description": "Deal 12 (17) damage. Shuffle a Wound into your draw pile. ",
+      "Energy": "1",
+      "Name": "Wild Strike",
+      "Rarity": "Common",
+      "Type": "Attack"
+    }
+  },
+  "colorlessCards": {
+    "Apotheosis": {
+      "Description": "Upgrade ALL of your cards for the rest of combat. Exhaust. ",
+      "Energy": "2 (1)",
+      "Name": "Apotheosis",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Bandage Up": {
+      "Description": "Heal 4. Exhaust. ",
+      "Energy": "0",
+      "Name": "Bandage Up",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Bite": {
+      "Description": "Deal 7 (8) damage. Heal 2 (3) HP. ",
+      "Energy": "1",
+      "Name": "Bite",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Blind": {
+      "Description": "Apply 2 Weak. ",
+      "Energy": "0",
+      "Name": "Blind",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Dark Shackles": {
+      "Description": "Enemy loses 9 strength for the rest of this turn. Exhaust. ",
+      "Energy": "0",
+      "Name": "Dark Shackles",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Deep Breath": {
+      "Description": "Shuffle your discard pile into your draw pile. Draw 1 card. ",
+      "Energy": "0",
+      "Name": "Deep Breath",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Dramatic Entrance": {
+      "Description": "Innate. Deal 6 (8) damage to all enemies. Exhaust. ",
+      "Energy": "0",
+      "Name": "Dramatic Entrance",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Enlightenment": {
+      "Description": "Reduce the cost of cards in your hand to 1 this turn (combat). ",
+      "Energy": "0",
+      "Name": "Enlightenment",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Finesse": {
+      "Description": "Gain 2 block. Draw 1 card. ",
+      "Energy": "0",
+      "Name": "Finesse",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Flash of Steel": {
+      "Description": "Deal 3 damage. Draw 1 card. ",
+      "Energy": "0",
+      "Name": "Flash of Steel",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Good Instincts": {
+      "Description": "Gain 4 block. ",
+      "Energy": "0",
+      "Name": "Good Instincts",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "J.A.X.": {
+      "Description": "Lose 3 HP. Gain 2 (3) strength. Exhaust. ",
+      "Energy": "0",
+      "Name": "J.A.X.",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Jack Of All Trades": {
+      "Description": "Add a (2) random colorless card to your hand. Exhaust. ",
+      "Energy": "0",
+      "Name": "Jack Of All Trades",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Madness": {
+      "Description": "A random card in your hand costs 0 for the rest of combat. Exhaust. ",
+      "Energy": "1 (0)",
+      "Name": "Madness",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Master Of Strategy": {
+      "Description": "Draw 3(4) Cards. Exhaust. ",
+      "Energy": "0",
+      "Name": "Master Of Strategy",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Mind Blast": {
+      "Description": "Deal damage equal to the number of cards in your draw pile. ",
+      "Energy": "0",
+      "Name": "Mind Blast",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Panacea": {
+      "Description": "Gain 1 Artifact. Exhaust. ",
+      "Energy": "0",
+      "Name": "Panacea",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Panache": {
+      "Description": "Every time you play 5 cards in a single turn, deal 10 (14) damage to ALL enemies. ",
+      "Energy": "0",
+      "Name": "Panache",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Purity": {
+      "Description": "Choose and exhaust 3 (5) cards in your hand. Exhaust. ",
+      "Energy": "0",
+      "Name": "Purity",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Sadistic Nature": {
+      "Description": "Whenever you apply a Debuff to an enemy, they take 3(4) damage. ",
+      "Energy": "0",
+      "Name": "Sadistic Nature",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Secret Technique": {
+      "Description": "Choose a Skill from your draw pile and place it into your hand. Exhaust (Don't Exhaust). ",
+      "Energy": "0",
+      "Name": "Secret Technique",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Secret Weapon": {
+      "Description": "Choose an Attack from your draw pile and place it into your hand. Exhaust (Don't Exhaust). ",
+      "Energy": "0",
+      "Name": "Secret Weapon",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Shiv": {
+      "Description": "Deal 4 damage. Exhaust. ",
+      "Energy": "0",
+      "Name": "Shiv",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Swift Strike": {
+      "Description": "Deal 5 damage. ",
+      "Energy": "0",
+      "Name": "Swift Strike",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Thinking Ahead": {
+      "Description": "Draw 2 cards. Place a card from your hand on top of your draw pile. Exhaust. ",
+      "Energy": "0",
+      "Name": "Thinking Ahead",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Transmutation": {
+      "Description": "Add X random (upgraded) colorless cards into your hand. Exhaust. ",
+      "Energy": "X",
+      "Name": "Transmutation",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Trip": {
+      "Description": "Apply 2 Vulnerable (to ALL enemies). ",
+      "Energy": "0",
+      "Name": "Trip",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    }
+  },
+  "curseCards": {
+    "Clumsy": {
+      "Description": "Unplayable. Ethereal. ",
+      "Energy": "",
+      "Name": "Clumsy",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Decay": {
+      "Description": "Unplayable. At the end of your turn, take 2 damage. ",
+      "Energy": "",
+      "Name": "Decay",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Doubt": {
+      "Description": "Unplayable. At the end of your turn, gain 1 weak. ",
+      "Energy": "",
+      "Name": "Doubt",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Injury": {
+      "Description": "Unplayable. ",
+      "Energy": "",
+      "Name": "Injury",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Necronomicurse": {
+      "Description": "Unplayable. There is no escape from this Curse. ",
+      "Energy": "",
+      "Name": "Necronomicurse",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Normality": {
+      "Description": "Unplayable. You cannot play more than 3 cards this turn. ",
+      "Energy": "",
+      "Name": "Normality",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Pain": {
+      "Description": "Unplayable. While in hand, lose 1 HP when other cards are played. ",
+      "Energy": "",
+      "Name": "Pain",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Parasite": {
+      "Description": "Unplayable. If transformed or removed from your deck, lose 3 Max HP. ",
+      "Energy": "",
+      "Name": "Parasite",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Regret": {
+      "Description": "Unplayable. At the end of your turn, lose 1 HP for each card in your hand. ",
+      "Energy": "",
+      "Name": "Regret",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Writhe": {
+      "Description": "Unplayable. Innate.",
+      "Energy": "",
+      "Name": "Writhe",
+      "Rarity": "",
+      "Type": "Curse"
+    }
+  }
+}

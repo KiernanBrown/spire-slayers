@@ -1,0 +1,27 @@
+{
+  "name": "spire-slayers",
+  "version": "1.0.0",
+  "description": "Deck building and sharing website for Slay the Spire.",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\"",
+    "nodemon": "nodemon --watch ./src ./src/server.js",
+    "build": "babel ./client --out-file ./hosted/bundle.js",
+    "watch": "babel --watch ./client --out-file ./hosted/bundle.js"
+  },
+  "author": "Kiernan Brown",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "bootstrap": "^4.0.0",
+    "nodemon": "^1.14.12"
+  }
+}

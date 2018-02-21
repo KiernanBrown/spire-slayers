@@ -1,0 +1,764 @@
+{
+  "greenCards": {
+    "A Thousand Cuts": {
+      "Description": "Whenever you play a card, deal 1 (2) damage to ALL enemies. ",
+      "Energy": "2",
+      "Name": "A Thousand Cuts",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Accuracy": {
+      "Description": "Shivs deal 3 (5) additional damage. ",
+      "Energy": "1",
+      "Name": "Accuracy",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Acrobatics": {
+      "Description": "Draw 3 (4) cards. Discard 1 card. ",
+      "Energy": "1",
+      "Name": "Acrobatics",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Adrenaline": {
+      "Description": "Gain 1 (2) Energy. Draw 2 cards. Exhaust. ",
+      "Energy": "1",
+      "Name": "Adrenaline",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "After Image": {
+      "Description": "(Innate). Whenever you play a card, gain 1 Block. ",
+      "Energy": "1",
+      "Name": "After Image",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "All Out Attack": {
+      "Description": "Deal 10 (14) damage to ALL enemies. Draw 1 less card next turn. ",
+      "Energy": "1",
+      "Name": "All Out Attack",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Backflip": {
+      "Description": "Gain 5 (8) block. Draw 2 cards. ",
+      "Energy": "1",
+      "Name": "Backflip",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Backstab": {
+      "Description": "Deal 11 (15) damage. Innate. Exhaust. ",
+      "Energy": "0",
+      "Name": "Backstab",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Bane": {
+      "Description": "Deal 7 (10) damage. If the enemy is Poisoned, deal 7 (10) damage again. ",
+      "Energy": "1",
+      "Name": "Bane",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Blade Dance": {
+      "Description": "Add 2 (3) Shivs to your hand. ",
+      "Energy": "1",
+      "Name": "Blade Dance",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Blur": {
+      "Description": "Gain 5(8) Block. Block is not removed at the start of your next turn. ",
+      "Energy": "1",
+      "Name": "Blur",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Bouncing Flask": {
+      "Description": "Apply 3 poison to a random enemy 3 (4) times. ",
+      "Energy": "2",
+      "Name": "Bouncing Flask",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Bullet Time": {
+      "Description": "You cannot draw any cads this turn. Reduce the cost of cards in your hand to 0 this turn. ",
+      "Energy": "3 (2)",
+      "Name": "Bullet Time",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Burst": {
+      "Description": "This turn your next 1 Skill is (2 Skills are) played twice. ",
+      "Energy": "1",
+      "Name": "Burst",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Calculated Gamble": {
+      "Description": " Discard your hand, then draw that many cards.  Exhaust.(non-exhaust) ",
+      "Energy": "0",
+      "Name": "Calculated Gamble",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Caltrops": {
+      "Description": "Whenever you are attacked, deal 3 (5) damage to the attacker. ",
+      "Energy": "1",
+      "Name": "Caltrops",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Catalyst": {
+      "Description": "Double (Triple) an enemy's Poison. Exhaust. ",
+      "Energy": "1",
+      "Name": "Catalyst",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Choke": {
+      "Description": "Deal 12 damage. Whenever you play a card this turn, targeted enemy loses 3 (5) HP. ",
+      "Energy": "2",
+      "Name": "Choke",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Cloak And Dagger": {
+      "Description": "Gain 6 Block. Add 1 Shiv (2 Shivs) to your hand. ",
+      "Energy": "1",
+      "Name": "Cloak And Dagger",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Concentrate": {
+      "Description": "Discard 3 (2) cards. Gain 2 Energy. ",
+      "Energy": "0",
+      "Name": "Concentrate",
+      "Rarity": "Unommon",
+      "Type": "Skill"
+    },
+    "Corpse Explosion": {
+      "Description": "Enemy loses all Poison. Deal damage equal to twice (3 times) the amount lost to ALL enemies. ",
+      "Energy": "2",
+      "Name": "Corpse Explosion",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Crippling Poison": {
+      "Description": "Apply 3 (5) Poison. Apply 3 (5) Weak. ",
+      "Energy": "2",
+      "Name": "Crippling Poison",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Dagger Spray": {
+      "Description": "Deal 4 (6) damage to ALL enemies twice. ",
+      "Energy": "1",
+      "Name": "Dagger Spray",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Dagger Throw": {
+      "Description": "Deal 9 (12) damage. Draw 1 card. Discard 1 card. ",
+      "Energy": "1",
+      "Name": "Dagger Throw",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Dash": {
+      "Description": "Gain 10 (13) Block. Deal 10 (13) damage. ",
+      "Energy": "2",
+      "Name": "Dash",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Deadly Poison": {
+      "Description": "Apply 4 (6) Poison. ",
+      "Energy": "1",
+      "Name": "Deadly Poison",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Deflect": {
+      "Description": "Gain 4(6) Block. ",
+      "Energy": "0",
+      "Name": "Deflect",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Die Die Die": {
+      "Description": " Deal 13 (17) damage to ALL enemies.   Exhaust. ",
+      "Energy": "1",
+      "Name": "Die Die Die",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Distraction": {
+      "Description": "Add a random Skill to your hand. It costs 0 this turn. Exhaust. ",
+      "Energy": "1 (0)",
+      "Name": "Distraction",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Dodge and Roll": {
+      "Description": "Gain 4 (6) Block. Next turn gain 4 (6) Block. ",
+      "Energy": "1",
+      "Name": "Dodge and Roll",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Doppelganger": {
+      "Description": "Next turn, draw X(+1) cards and gain X(+1) Energy. ",
+      "Energy": "X",
+      "Name": "Doppelganger",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Endless Agony": {
+      "Description": "Whenever you draw this card, add a copy of it to your hand. Deal 4 (6) damage. Exhaust. ",
+      "Energy": "0",
+      "Name": "Endless Agony",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Envenom": {
+      "Description": "Whenever an attack deals unblocked damage, apply 1 Poison. ",
+      "Energy": "2 (1)",
+      "Name": "Envenom",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Escape Plan": {
+      "Description": "Draw 1 card. If the card is a Skill, gain 3 (5) Block. ",
+      "Energy": "0",
+      "Name": "Escape Plan",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Eviscerate": {
+      "Description": "Costs 1 less Energy for each card discarded this turn. Deal 6 (8) damage three times. ",
+      "Energy": "4",
+      "Name": "Eviscerate",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Finisher": {
+      "Description": "Deal 6 (8) damage for each Attack played this turn. ",
+      "Energy": "1",
+      "Name": "Finisher",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Flechettes": {
+      "Description": "Deal 4 (6) damage for each Skill in your hand. ",
+      "Energy": "1",
+      "Name": "Flechettes",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Flying Knee": {
+      "Description": "Deal 8 (11) damage. Next turn gain 1 Energy. ",
+      "Energy": "1",
+      "Name": "Flying Knee",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Footwork": {
+      "Description": "Gain 2 (3) Dexterity. ",
+      "Energy": "1",
+      "Name": "Footwork",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Glass Knife": {
+      "Description": "Deal 8 (12) damage twice. Glass Knife's damage is lowered by 2 this combat. ",
+      "Energy": "1",
+      "Name": "Glass Knife",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Grand Finale": {
+      "Description": "Can only be played if there are no cards in your draw pile. Deal 40 (50) damage to ALL enemies. ",
+      "Energy": "1",
+      "Name": "Grand Finale",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Heel Hook": {
+      "Description": "Deal 5 (7) damage. If the enemy is Weak, Gain 1 Energy and draw 1 card. ",
+      "Energy": "1",
+      "Name": "Heel Hook",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Infinite Blades": {
+      "Description": "(Innate). At the start of your turn, add a Shiv to your hand. ",
+      "Energy": "1",
+      "Name": "Infinite Blades",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Leg Sweep": {
+      "Description": "Apply 2 (3) Weak. Gain 12 (15) Block. ",
+      "Energy": "2",
+      "Name": "Leg Sweep",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Malaise": {
+      "Description": "Spend all Energy. Enemy loses X (+1) Strength. Apply X (+1) Weak. Exhaust. ",
+      "Energy": "X",
+      "Name": "Malaise",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Masterful Stab": {
+      "Description": "Can only be played if there are no other cards in your hand. Deal 15 (20) damage. ",
+      "Energy": "0",
+      "Name": "Masterful Stab",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Neutralize": {
+      "Description": "Deal 3 (4) damage. Apply 1 (2) Weak. ",
+      "Energy": "0",
+      "Name": "Neutralize",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Nightmare": {
+      "Description": "Choose a card. Next turn, add 3 copies of that card into your hand.  Exhaust. ",
+      "Energy": "3 (2)",
+      "Name": "Nightmare",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Noxious Fumes": {
+      "Description": "At the start of your turn, apply 2 (3) Poison to ALL enemies. ",
+      "Energy": "1",
+      "Name": "Noxious Fumes",
+      "Rarity": "Uncommon",
+      "Type": "Power"
+    },
+    "Outmaneuver": {
+      "Description": "Next turn gain 2 (3) Energy. ",
+      "Energy": "1",
+      "Name": "Outmaneuver",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Phantasmal Killer": {
+      "Description": "On your next turn, your Attack damage is doubled. ",
+      "Energy": "2 (1)",
+      "Name": "Phantasmal Killer",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Piercing Wail": {
+      "Description": "ALL enemies lose 6 (8) Strength for 1 turn. Exhaust. ",
+      "Energy": "1",
+      "Name": "Piercing Wail",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Poisoned Stab": {
+      "Description": "Deal 5 (6) damage. Apply 3 (4) Poison. ",
+      "Energy": "1",
+      "Name": "Poisoned Stab",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Predator": {
+      "Description": "Deal 15 (20) damage. Draw 2 more cards next turn. ",
+      "Energy": "2",
+      "Name": "Predator",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Prepared": {
+      "Description": "Draw 1 (2) card(s). Discard 1(2) card(s). ",
+      "Energy": "0",
+      "Name": "Prepared",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Quick Slash": {
+      "Description": "Deal 8 (12) damage. Draw 1 card. ",
+      "Energy": "1",
+      "Name": "Quick Slash",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Reflex": {
+      "Description": "Unplayable. If this card is discarded from your hand, draw 1 card. ",
+      "Energy": "",
+      "Name": "Reflex",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Riddle With Holes": {
+      "Description": "Deal 3 (4) damage 5 times. ",
+      "Energy": "2",
+      "Name": "Riddle With Holes",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Setup": {
+      "Description": "Place a card in your hand on top of your draw pile. It cost 0 until it is played. ",
+      "Energy": "1 (0)",
+      "Name": "Setup",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Skewer": {
+      "Description": "Spend all Energy. Deal 7 (10) damage X times. ",
+      "Energy": "X",
+      "Name": "Skewer",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Slice": {
+      "Description": "Deal 5 (8) damage. ",
+      "Energy": "0",
+      "Name": "Slice",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Storm of Steel": {
+      "Description": "Discard your hand. Add 1 (Upgraded) Shiv to your hand for each card discarded. ",
+      "Energy": "2",
+      "Name": "Storm of Steel",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Sucker Punch": {
+      "Description": "Deal 7 (9) damage. Apply 1 (2) Weak. ",
+      "Energy": "1",
+      "Name": "Sucker Punch",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Survivor": {
+      "Description": "Gain 8(11) Block. Discard a card. ",
+      "Energy": "1",
+      "Name": "Survivor",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Tactician": {
+      "Description": "Unplayable. If this card is discarded from your hand, gain 1(2) Energy. ",
+      "Energy": "",
+      "Name": "Tactician",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Terror": {
+      "Description": "Apply 99 Vulnerable. Exhaust. ",
+      "Energy": "1(0)",
+      "Name": "Terror",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Tools of the Trade": {
+      "Description": "At the start of your turn, draw 1 card and discard 1 card. ",
+      "Energy": "1(0)",
+      "Name": "Tools of the Trade",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Underhanded Strike": {
+      "Description": "Unplayable. If this card is discarded from your hand, deal 7 (10) damage to a random enemy. ",
+      "Energy": "",
+      "Name": "Underhanded Strike",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Unload": {
+      "Description": "Deal 12 (16) damage. Discard ALL non-Attack cards. ",
+      "Energy": "1",
+      "Name": "Unload",
+      "Rarity": "Rare",
+      "Type": "Attack"
+    },
+    "Well-Laid Plans": {
+      "Description": "At the end of your turn, Retain up to 1 card. ",
+      "Energy": "0",
+      "Name": "Well-Laid Plans",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Wraith Form": {
+      "Description": "Whenever you play a Skill, deal 3 (5) damage to a random enemy.",
+      "Energy": "3",
+      "Name": "Wraith Form",
+      "Rarity": "Rare",
+      "Type": "Power"
+    }
+  },
+  "colorlessCards": {
+    "Apotheosis": {
+      "Description": "Upgrade ALL of your cards for the rest of combat. Exhaust. ",
+      "Energy": "2 (1)",
+      "Name": "Apotheosis",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Bandage Up": {
+      "Description": "Heal 4. Exhaust. ",
+      "Energy": "0",
+      "Name": "Bandage Up",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Bite": {
+      "Description": "Deal 7 (8) damage. Heal 2 (3) HP. ",
+      "Energy": "1",
+      "Name": "Bite",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Blind": {
+      "Description": "Apply 2 Weak. ",
+      "Energy": "0",
+      "Name": "Blind",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Dark Shackles": {
+      "Description": "Enemy loses 9 strength for the rest of this turn. Exhaust. ",
+      "Energy": "0",
+      "Name": "Dark Shackles",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Deep Breath": {
+      "Description": "Shuffle your discard pile into your draw pile. Draw 1 card. ",
+      "Energy": "0",
+      "Name": "Deep Breath",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Dramatic Entrance": {
+      "Description": "Innate. Deal 6 (8) damage to all enemies. Exhaust. ",
+      "Energy": "0",
+      "Name": "Dramatic Entrance",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Enlightenment": {
+      "Description": "Reduce the cost of cards in your hand to 1 this turn (combat). ",
+      "Energy": "0",
+      "Name": "Enlightenment",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Finesse": {
+      "Description": "Gain 2 block. Draw 1 card. ",
+      "Energy": "0",
+      "Name": "Finesse",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Flash of Steel": {
+      "Description": "Deal 3 damage. Draw 1 card. ",
+      "Energy": "0",
+      "Name": "Flash of Steel",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Good Instincts": {
+      "Description": "Gain 4 block. ",
+      "Energy": "0",
+      "Name": "Good Instincts",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "J.A.X.": {
+      "Description": "Lose 3 HP. Gain 2 (3) strength. Exhaust. ",
+      "Energy": "0",
+      "Name": "J.A.X.",
+      "Rarity": "Common",
+      "Type": "Skill"
+    },
+    "Jack Of All Trades": {
+      "Description": "Add a (2) random colorless card to your hand. Exhaust. ",
+      "Energy": "0",
+      "Name": "Jack Of All Trades",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Madness": {
+      "Description": "A random card in your hand costs 0 for the rest of combat. Exhaust. ",
+      "Energy": "1 (0)",
+      "Name": "Madness",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Master Of Strategy": {
+      "Description": "Draw 3(4) Cards. Exhaust. ",
+      "Energy": "0",
+      "Name": "Master Of Strategy",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Mind Blast": {
+      "Description": "Deal damage equal to the number of cards in your draw pile. ",
+      "Energy": "0",
+      "Name": "Mind Blast",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Panacea": {
+      "Description": "Gain 1 Artifact. Exhaust. ",
+      "Energy": "0",
+      "Name": "Panacea",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Panache": {
+      "Description": "Every time you play 5 cards in a single turn, deal 10 (14) damage to ALL enemies. ",
+      "Energy": "0",
+      "Name": "Panache",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Purity": {
+      "Description": "Choose and exhaust 3 (5) cards in your hand. Exhaust. ",
+      "Energy": "0",
+      "Name": "Purity",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    },
+    "Sadistic Nature": {
+      "Description": "Whenever you apply a Debuff to an enemy, they take 3(4) damage. ",
+      "Energy": "0",
+      "Name": "Sadistic Nature",
+      "Rarity": "Rare",
+      "Type": "Power"
+    },
+    "Secret Technique": {
+      "Description": "Choose a Skill from your draw pile and place it into your hand. Exhaust (Don't Exhaust). ",
+      "Energy": "0",
+      "Name": "Secret Technique",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Secret Weapon": {
+      "Description": "Choose an Attack from your draw pile and place it into your hand. Exhaust (Don't Exhaust). ",
+      "Energy": "0",
+      "Name": "Secret Weapon",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Shiv": {
+      "Description": "Deal 4 damage. Exhaust. ",
+      "Energy": "0",
+      "Name": "Shiv",
+      "Rarity": "Common",
+      "Type": "Attack"
+    },
+    "Swift Strike": {
+      "Description": "Deal 5 damage. ",
+      "Energy": "0",
+      "Name": "Swift Strike",
+      "Rarity": "Uncommon",
+      "Type": "Attack"
+    },
+    "Thinking Ahead": {
+      "Description": "Draw 2 cards. Place a card from your hand on top of your draw pile. Exhaust. ",
+      "Energy": "0",
+      "Name": "Thinking Ahead",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Transmutation": {
+      "Description": "Add X random (upgraded) colorless cards into your hand. Exhaust. ",
+      "Energy": "X",
+      "Name": "Transmutation",
+      "Rarity": "Rare",
+      "Type": "Skill"
+    },
+    "Trip": {
+      "Description": "Apply 2 Vulnerable (to ALL enemies). ",
+      "Energy": "0",
+      "Name": "Trip",
+      "Rarity": "Uncommon",
+      "Type": "Skill"
+    }
+  },
+  "curseCards": {
+    "Clumsy": {
+      "Description": "Unplayable. Ethereal. ",
+      "Energy": "",
+      "Name": "Clumsy",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Decay": {
+      "Description": "Unplayable. At the end of your turn, take 2 damage. ",
+      "Energy": "",
+      "Name": "Decay",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Doubt": {
+      "Description": "Unplayable. At the end of your turn, gain 1 weak. ",
+      "Energy": "",
+      "Name": "Doubt",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Injury": {
+      "Description": "Unplayable. ",
+      "Energy": "",
+      "Name": "Injury",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Necronomicurse": {
+      "Description": "Unplayable. There is no escape from this Curse. ",
+      "Energy": "",
+      "Name": "Necronomicurse",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Normality": {
+      "Description": "Unplayable. You cannot play more than 3 cards this turn. ",
+      "Energy": "",
+      "Name": "Normality",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Pain": {
+      "Description": "Unplayable. While in hand, lose 1 HP when other cards are played. ",
+      "Energy": "",
+      "Name": "Pain",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Parasite": {
+      "Description": "Unplayable. If transformed or removed from your deck, lose 3 Max HP. ",
+      "Energy": "",
+      "Name": "Parasite",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Regret": {
+      "Description": "Unplayable. At the end of your turn, lose 1 HP for each card in your hand. ",
+      "Energy": "",
+      "Name": "Regret",
+      "Rarity": "",
+      "Type": "Curse"
+    },
+    "Writhe": {
+      "Description": "Unplayable. Innate.",
+      "Energy": "",
+      "Name": "Writhe",
+      "Rarity": "",
+      "Type": "Curse"
+    }
+  }
+}
