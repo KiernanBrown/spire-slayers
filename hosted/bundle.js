@@ -1,21 +1,122 @@
 'use strict';
 
-var cards = void 0;
-var displayCards = {};
+var mode = 'start'; // What mode are we in (start, build, view)
 
-var nameField = void 0;
+var cards = void 0; // Object containing all cards
+var displayCards = {}; // Object containing cards we want to display
 
-var character = '';
+var nameField = void 0; // Field used for filtering cards by name
 
-var deck = [];
+var character = ''; // Character we have selected
+var deckRemovable = true; // Can we remove cards from the deck (not during publishing)
 
-// REFACTOR THIS CODE
-var updateCards = function updateCards() {
-  var bigString = '<p>Click a card to add it to your deck (not functional)</p><p>(Values in parenthesis are for the upgraded card)</p>';
-  if (displayCards.redCards) {
-    var keys = Object.keys(displayCards.redCards);
+// Our deck object
+var deck = {
+  name: '',
+  character: '',
+  cards: [],
+  notes: ''
+};
+
+// Array of deckNames that this user has created
+// We will load the cookie for createdDecks on init and set this to be that
+var createdDecks = [];
+
+// Function to update/show your deck on the screen
+var updateDeck = function updateDeck() {
+  var cardCounts = {};
+
+  for (var i = 0; i < deck.cards.length; i++) {
+    var card = deck.cards[i];
+    cardCounts[card] = (cardCounts[card] || 0) + 1;
+  }
+
+  // Build our content
+  var bigString = '';
+  if (mode === 'build') bigString = bigString + ' <h4>Step 2: Build your deck</h4>';else if (mode === 'view') bigString = bigString + ' <h4>' + deck.name + '</h4>';
+  bigString = bigString + ' <b>Your Deck:</b> <br />';
+  if (deckRemovable) bigString = bigString + ' <em>(Click on a card to remove it from your deck)</em>';
+
+  var colCount = 0;
+  for (var _i = 0; _i < deck.cards.length; _i++) {
+    var _card = deck.cards[_i];
+    // Only write the card for the first occurance
+    if (deck.cards.indexOf(_card) === _i) {
+      if (colCount % 8 === 0) {
+        // If we are at a 8th card, close our previous row and start a new one
+        bigString = bigString + ' <div class="col-sm-1"></div>';
+        bigString = bigString + ' </div>';
+        bigString = bigString + ' <div class="row">';
+        bigString = bigString + ' <div class="col-sm-1"></div>';
+      }
+
+      // Make deck cards removable if you are not publishing the deck
+      if (deckRemovable) bigString = bigString + ' <div class="deckCards" onclick="deck.cards.splice(\'' + _i + '\', 1); updateDeck();">';else bigString = bigString + ' <div class="deckCards">';
+      bigString = bigString + ' <h4>' + deck.cards[_i] + ' x' + cardCounts[_card] + '</h4>';
+      bigString = bigString + ' </div>';
+      colCount++;
+    }
+  }
+
+  bigString = bigString + ' </div>';
+
+  // Add the button for publishing the deck
+  if (deck.cards.length > 0 && deckRemovable) {
+    bigString = bigString + ' <button type="button" class="btn btn-primary" onclick="prePublishDeck();">Publish Deck</button> <br />';
+  }
+
+  document.querySelector('#deck').innerHTML = bigString;
+};
+
+// Menu for publishing the deck
+var prePublishDeck = function prePublishDeck() {
+  deckRemovable = false;
+  updateDeck();
+
+  // Show the deck publishing options
+  var bigString = '<h4>Step 3: Publish your deck</h4>';
+  bigString = bigString + ' <br /> <label for="deckName">Deck Name: (entering an existing deck name will update that deck)</label>';
+  bigString = bigString + ' <input id=\'deckNameField\' type=\'text\' name=\'deckName\' />';
+  bigString = bigString + ' <br /> <label for="deckNotes">Notes about this deck (Optional): </label> <br />';
+  bigString = bigString + ' <textarea id="deckNotesField" rows="8" cols="60"> </textarea>';
+
+  bigString = bigString + ' <br /> <button type="button" class="btn btn-primary" onclick="publishDeck();">Publish Deck</button>';
+  document.querySelector('#cardsHeader').innerHTML = '';
+  document.querySelector('#filters').innerHTML = '';
+  document.querySelector('#cards').innerHTML = bigString;
+};
+
+// Function to set our starting deck if we are building a deck
+// This sets our deck to the starting deck for the character you have selected
+var setStartDeck = function setStartDeck() {
+  deck.cards = [];
+  if (character === 'ironclad') {
+    for (var i = 0; i < 5; i++) {
+      deck.cards.push('Strike');
+    }
+    for (var _i2 = 0; _i2 < 4; _i2++) {
+      deck.cards.push('Defend');
+    }
+    deck.cards.push('Bash');
+  } else {
+    for (var _i3 = 0; _i3 < 5; _i3++) {
+      deck.cards.push('Defend');
+    }
+    for (var _i4 = 0; _i4 < 5; _i4++) {
+      deck.cards.push('Strike');
+    }
+    deck.cards.push('Survivor');
+    deck.cards.push('Neutralize');
+  }
+};
+
+// Function to set cards of a specified cardType
+var setCards = function setCards(cardType, displayEnergy, bString) {
+  var bigString = bString;
+  if (displayCards[cardType]) {
+    var keys = Object.keys(displayCards[cardType]);
     for (var i = 0; i < keys.length; i++) {
-      var card = displayCards.redCards[keys[i]];
+      var card = displayCards[cardType][keys[i]];
 
       if (i % 5 === 0) {
         // If we are at a 5th card, close our previous row and start a new one
@@ -24,223 +125,325 @@ var updateCards = function updateCards() {
         bigString = bigString + ' <div class="row">';
         bigString = bigString + ' <div class="col-sm-1"></div>';
       }
-      bigString = bigString + ' <div class="col-sm-2 redCard">';
+      // If we are building a deck, have the click event to add cards
+      if (mode === 'build') bigString = bigString + ' <div class="col-sm-2 ' + cardType + '" onclick="deck.cards.push(\'' + card.Name + '\'); updateDeck();">';
+      // Otherwise just display the card
+      else if (mode === 'view') bigString = bigString + ' <div class="col-sm-2 ' + cardType + '">';
       bigString = bigString + ' <h3>' + card.Name + '</h3>';
-      bigString = bigString + ' <p>Energy: ' + card.Energy + '</p>';
+      if (displayEnergy) bigString = bigString + ' <p>Energy: ' + card.Energy + '</p>';
       bigString = bigString + ' ' + card.Type + '</p>';
       bigString = bigString + ' ' + card.Description + '</p>';
       bigString = bigString + ' </div>';
     }
   }
 
-  if (displayCards.greenCards) {
-    var _keys = Object.keys(displayCards.greenCards);
-    for (var _i = 0; _i < _keys.length; _i++) {
-      var _card = displayCards.greenCards[_keys[_i]];
+  return bigString;
+};
 
-      if (_i % 5 === 0) {
-        // If we are at a 5th card, close our previous row and start a new one
-        bigString = bigString + ' <div class="col-sm-1"></div>';
-        bigString = bigString + ' </div>';
-        bigString = bigString + ' <div class="row">';
-        bigString = bigString + ' <div class="col-sm-1"></div>';
-      }
-      bigString = bigString + ' <div class="col-sm-2 greenCard">';
-      bigString = bigString + ' <h3>' + _card.Name + '</h3>';
-      bigString = bigString + ' <p>Energy: ' + _card.Energy + '</p>';
-      bigString = bigString + ' ' + _card.Type + '</p>';
-      bigString = bigString + ' ' + _card.Description + '</p>';
-      bigString = bigString + ' </div>';
-    }
-  }
+// Set all of our cards and show them on the page
+var updateCards = function updateCards() {
+  var bigString = '';
+  if (mode === 'build') bigString = '<h4>Click a card to add it to your deck:</h4> <em>(Values in parenthesis are for the upgraded card)</em>';else if (mode === 'view') bigString = '<h4>These are the cards in this deck</h4> <em>(Values in parenthesis are for the upgraded card)</em>';
+  document.querySelector("#cardsHeader").innerHTML = bigString;
 
-  if (displayCards.colorlessCards) {
-    var _keys2 = Object.keys(displayCards.colorlessCards);
-    for (var _i2 = 0; _i2 < _keys2.length; _i2++) {
-      var _card2 = displayCards.colorlessCards[_keys2[_i2]];
-
-      if (_i2 % 5 === 0) {
-        // If we are at a 5th card, close our previous row and start a new one
-        bigString = bigString + ' <div class="col-sm-1"></div>';
-        bigString = bigString + ' </div>';
-        bigString = bigString + ' <div class="row">';
-        bigString = bigString + ' <div class="col-sm-1"></div>';
-      }
-      bigString = bigString + ' <div class="col-sm-2 colorlessCard">';
-      bigString = bigString + ' <h3>' + _card2.Name + '</h3>';
-      bigString = bigString + ' <p>Energy: ' + _card2.Energy + '</p>';
-      bigString = bigString + ' ' + _card2.Type + '</p>';
-      bigString = bigString + ' ' + _card2.Description + '</p>';
-      bigString = bigString + ' </div>';
-    }
-  }
-  if (displayCards.curseCards) {
-    var _keys3 = Object.keys(displayCards.curseCards);
-    for (var _i3 = 0; _i3 < _keys3.length; _i3++) {
-      var _card3 = displayCards.curseCards[_keys3[_i3]];
-
-      if (_i3 % 5 === 0) {
-        // If we are at a 5th card, close our previous row and start a new one
-        bigString = bigString + ' <div class="col-sm-1"></div>';
-        bigString = bigString + ' </div>';
-        bigString = bigString + ' <div class="row">';
-        bigString = bigString + ' <div class="col-sm-1"></div>';
-      }
-      bigString = bigString + ' <div class="col-sm-2 curseCard">';
-      bigString = bigString + ' <h3>' + _card3.Name + '</h3>';
-      bigString = bigString + ' ' + _card3.Type + '</p>';
-      bigString = bigString + ' ' + _card3.Description + '</p>';
-      bigString = bigString + ' </div>';
-    }
-  }
+  bigString = '';
+  bigString = setCards('redCards', true, bigString);
+  bigString = setCards('greenCards', true, bigString);
+  bigString = setCards('colorlessCards', true, bigString);
+  bigString = setCards('curseCards', false, bigString);
 
   // Show our cards on our page
-  var content = document.querySelector("#content");
+  var content = document.querySelector("#cards");
   content.innerHTML = bigString;
 };
 
+// Method to reset a cardType in our displayCards
+var resetCards = function resetCards(cardType) {
+  if (cards[cardType]) {
+    displayCards[cardType] = {};
+    var keys = Object.keys(cards[cardType]);
+    for (var i = 0; i < keys.length; i++) {
+      var card = cards[cardType][keys[i]];
+      displayCards[cardType][card.Name] = card;
+    }
+  }
+};
+
+// Resets all of our displayCards to be cards
 var resetDisplayCards = function resetDisplayCards() {
   displayCards = {};
-  if (cards.redCards) {
-    displayCards.redCards = {};
-    var keys = Object.keys(cards.redCards);
+  resetCards('redCards');
+  resetCards('greenCards');
+  resetCards('colorlessCards');
+  resetCards('curseCards');
+};
+
+// Method to filter a cardType by name
+var nameFilter = function nameFilter(cardType) {
+  if (displayCards[cardType]) {
+    var keys = Object.keys(displayCards[cardType]);
     for (var i = 0; i < keys.length; i++) {
-      var card = cards.redCards[keys[i]];
-      displayCards.redCards[card.Name] = card;
+      var card = displayCards[cardType][keys[i]];
+      if (!card.Name.toUpperCase().includes(nameField.value.toUpperCase())) {
+        delete displayCards[cardType][keys[i]];
+      }
     }
   }
-  if (cards.greenCards) {
-    displayCards.greenCards = {};
-    var _keys4 = Object.keys(cards.greenCards);
-    for (var _i4 = 0; _i4 < _keys4.length; _i4++) {
-      var _card4 = cards.greenCards[_keys4[_i4]];
-      displayCards.greenCards[_card4.Name] = _card4;
-    }
-  }
-  if (cards.colorlessCards) {
-    displayCards.colorlessCards = {};
-    var _keys5 = Object.keys(cards.colorlessCards);
-    for (var _i5 = 0; _i5 < _keys5.length; _i5++) {
-      var _card5 = cards.colorlessCards[_keys5[_i5]];
-      displayCards.colorlessCards[_card5.Name] = _card5;
-    }
-  }
-  if (cards.curseCards) {
-    displayCards.curseCards = {};
-    var _keys6 = Object.keys(cards.curseCards);
-    for (var _i6 = 0; _i6 < _keys6.length; _i6++) {
-      var _card6 = cards.curseCards[_keys6[_i6]];
-      displayCards.curseCards[_card6.Name] = _card6;
+};
+
+// Method to filter cards out of a cardType based on if they're in the deck we are viewing
+var deckFilter = function deckFilter(cardType) {
+  if (displayCards[cardType]) {
+    var keys = Object.keys(displayCards[cardType]);
+    for (var i = 0; i < keys.length; i++) {
+      var card = displayCards[cardType][keys[i]];
+      if (!deck.cards.includes(card.Name)) {
+        delete displayCards[cardType][keys[i]];
+      }
     }
   }
 };
 
 // Update our display cards based on name filter
 var updateDisplayCards = function updateDisplayCards() {
-  console.dir(nameField.value);
-  if (nameField.value !== '') {
-    if (displayCards.redCards) {
-      var keys = Object.keys(displayCards.redCards);
-      for (var i = 0; i < keys.length; i++) {
-        var card = displayCards.redCards[keys[i]];
-        if (!card.Name.toUpperCase().includes(nameField.value.toUpperCase())) {
-          delete displayCards.redCards[keys[i]];
-        }
-      }
+  // We filter by the name field when building a deck
+  if (mode === 'build') {
+    if (nameField.value !== '') {
+      nameFilter('redCards');
+      nameFilter('greenCards');
+      nameFilter('colorlessCards');
+      nameFilter('curseCards');
     }
+  }
 
-    if (displayCards.greenCards) {
-      var _keys7 = Object.keys(displayCards.greenCards);
-      for (var _i7 = 0; _i7 < _keys7.length; _i7++) {
-        var _card7 = displayCards.greenCards[_keys7[_i7]];
-        if (!_card7.Name.toUpperCase().includes(nameField.value.toUpperCase())) {
-          delete displayCards.greenCards[_keys7[_i7]];
-        }
-      }
-    }
-
-    if (displayCards.colorlessCards) {
-      var _keys8 = Object.keys(displayCards.colorlessCards);
-      for (var _i8 = 0; _i8 < _keys8.length; _i8++) {
-        var _card8 = displayCards.colorlessCards[_keys8[_i8]];
-        if (!_card8.Name.toUpperCase().includes(nameField.value.toUpperCase())) {
-          delete displayCards.colorlessCards[_keys8[_i8]];
-        }
-      }
-    }
-
-    if (displayCards.curseCards) {
-      var _keys9 = Object.keys(displayCards.curseCards);
-      for (var _i9 = 0; _i9 < _keys9.length; _i9++) {
-        var _card9 = displayCards.curseCards[_keys9[_i9]];
-        if (!_card9.Name.toUpperCase().includes(nameField.value.toUpperCase())) {
-          delete displayCards.curseCards[_keys9[_i9]];
-        }
-      }
-    }
+  // We filter by deck when viewing a deck
+  // This makes it so only cards in the deck appear on the page
+  if (mode === 'view') {
+    deckFilter('redCards');
+    deckFilter('greenCards');
+    deckFilter('colorlessCards');
+    deckFilter('curseCards');
   }
 };
 
 var handleResponse = function handleResponse(xhr) {
-  var content = document.querySelector("#content");
+  // We will handle 204 requests before anything else, as we don't parse them
+  if (xhr.status === 204) {
+    // Updated, user has used a POST request to edit a deck that they created
+    bigString = '<h4>Deck Updated</h4></p>';
+    bigString = bigString + ' <br /> <button type="button" class="btn btn-primary" onclick="changeMode(\'start\');">Back to start</button> <br />';
+    document.querySelector('#responses').innerHTML = bigString;
+    return;
+  }
 
   var obj = JSON.parse(xhr.response);
 
   console.dir(obj);
 
+  var bigString = '';
+
   switch (xhr.status) {
+    // Success, user used a get request
+    // This is either to get a deck or all decks, or to get cards from the server
     case 200:
-      cards = obj;
-      resetDisplayCards();
-      updateCards();
+      if (obj.allDecks) {
+        // If the user requested the array of all deck names, make the deck objects
+        if (obj.allDecks.length === 0) {
+          bigString = bigString + ' <h4>No decks have been created yet! Try creating a deck.</h4>';
+          document.querySelector('#cards').innerHTML = bigString;
+          return;
+        }
+        for (var i = 0; i < obj.allDecks.length; i++) {
+          if (i % 3 === 0) {
+            // If we are at a 3rd deck, close our previous row and start a new one
+            bigString = bigString + ' <div class="col-sm-1"></div>';
+            bigString = bigString + ' </div>';
+            bigString = bigString + ' <div class="row">';
+            bigString = bigString + ' <div class="col-sm-1"></div>';
+          }
+          bigString = bigString + ' <div class = \'col-sm-3 deckCards\' onclick=\'deck.name = this.textContent; viewDeck();\'>' + obj.allDecks[i] + '</div>';
+        }
+        document.querySelector('#cards').innerHTML = bigString;
+      } else if (obj.deck) {
+        // If the user has requested a deck, we will display it on screen
+        deck.name = obj.deck.name;
+        deck.character = obj.deck.character;
+        character = deck.character;
+        deck.cards = obj.deck.cards;
+        deck.notes = obj.deck.notes;
+        getStarterCards();
+
+        // Fill our responses section with our notes for the deck
+        document.querySelector("#responses").innerHTML = '<p><b>Notes:</b> ' + deck.notes + '</p>';
+      } else {
+        cards = obj;
+        resetDisplayCards();
+        if (mode === 'view') updateDisplayCards(); // If we are viewing the deck, updateDisplayCards to remove non-relevant cards
+        updateCards();
+        if (mode === 'build') setStartDeck(); // If we are building a deck, set our deck to the starting deck
+        updateDeck();
+
+        if (mode === 'build') {
+          // Set up our nameFilter
+          bigString = '<br /> <label for="cardName">Filter By Name: </label>';
+          bigString = bigString + ' <input id=\'nameField\' type=\'text\' name=\'cardName\' />';
+          document.querySelector('#filters').innerHTML = bigString;
+
+          nameField = document.querySelector('#nameField');
+          nameField.onkeyup = function () {
+            resetDisplayCards();
+            updateDisplayCards();
+            updateCards();
+          };
+          nameField.value = '';
+        }
+      }
       break;
+
+    // Created, user has used a POST request to add a deck to our server's list of decks
+    case 201:
+      bigString = '<h4>' + obj.message + '</h4>';
+      bigString = bigString + ' <br /> <button type="button" class="btn btn-primary" onclick="changeMode(\'start\');">Back to start</button> <br />';
+      document.querySelector('#responses').innerHTML = bigString;
+
+      // If the user has created a deck, we will add that to our createdDecks and update the cookie
+      createdDecks.push(deck.name);
+      document.cookie = createdDecks.toString();
+      setTimeout(5000, function () {
+        changeMode('start');
+      });
+      break;
+
+    // Bad Request, user didn't enter a name when publishing the deck
     case 400:
-      content.innerHTML = '<b>Bad Request</b>';
-      break;
-    default:
-      content.innerHTML = 'Error code not implemented by client.';
+      bigString = '<h4 class="error">Bad Request: ' + obj.message + '</h4>';
+      document.querySelector('#responses').innerHTML = bigString;
       break;
   }
 };
 
-var sendAjax = function sendAjax(url, params) {
+var sendAjax = function sendAjax(method, url, params) {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', url + '?' + params);
+  xhr.open(method, url + '?' + params);
   xhr.setRequestHeader('Accept', 'application/json');
 
   xhr.onload = function () {
     return handleResponse(xhr);
   };
 
-  console.dir(params);
-
   xhr.send();
 };
 
 var getStarterCards = function getStarterCards() {
-  nameField.removeAttribute('disabled');
-  nameField.value = '';
   var params = 'character=' + character;
-  sendAjax('/starterCards', params);
+  sendAjax('GET', '/starterCards', params);
+};
+
+// Send a POST request to add the deck to our server's decks
+var publishDeck = function publishDeck() {
+  deck.name = document.querySelector('#deckNameField').value;
+  deck.notes = document.querySelector('#deckNotesField').value;
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', '/publishDeck');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.setRequestHeader('Accept', 'application/json');
+
+  xhr.onload = function () {
+    return handleResponse(xhr);
+  };
+
+  var dataString = JSON.stringify(deck);
+  if (createdDecks.length > 0) dataString = dataString + '|' + JSON.stringify(createdDecks);
+  console.dir(dataString);
+  console.dir(createdDecks);
+
+  xhr.send(dataString);
+};
+
+var changeMode = function changeMode(newMode) {
+  mode = newMode;
+  if (newMode === 'start') {
+    // Give our start top
+    var bigString = '<h1>Spire Slayers</h1>';
+    bigString = bigString + ' <h4>Deckbuilding and viewing application for Slay the Spire</h4>';
+    bigString = bigString + ' <p>Start off by either building your own deck, or viewing decks that other users have created.</p>';
+    bigString = bigString + ' <button type="button" class="btn btn-primary" id=\'buildButton\'>Build Deck</button> ';
+    bigString = bigString + ' <button type="button" class="btn btn-primary" id=\'viewButton\'>View Deck</button>';
+    document.querySelector('#top').innerHTML = bigString;
+    document.querySelector('#deck').innerHTML = '';
+    document.querySelector('#cardsHeader').innerHTML = '';
+    document.querySelector('#filters').innerHTML = '';
+    document.querySelector('#cards').innerHTML = '';
+    document.querySelector('#responses').innerHTML = '';
+
+    // Set up our buttons
+    document.querySelector("#buildButton").onclick = function () {
+      changeMode('build');
+    };
+
+    document.querySelector("#viewButton").onclick = function () {
+      changeMode('view');
+    };
+  }
+
+  if (newMode === 'build') {
+    // Give our build deck top
+    var _bigString = '<h1>Deck Builder</h1>';
+    _bigString = _bigString + ' <h4>Step 1: Select the character you are creating the deck for</h4>';
+    _bigString = _bigString + ' <form id="characterSelect">';
+    _bigString = _bigString + ' <div class="btn-group" data-toggle="buttons">';
+    _bigString = _bigString + ' <label id=\'ironcladButton\' class="btn btn-primary"> <input type="radio" name="characters" value=\'ironclad\' id=\'iButton\'> The Ironclad </label>';
+    _bigString = _bigString + ' <label id=\'silentButton\' class="btn btn-primary"> <input type="radio" name="characters" value=\'silent\' id=\'sButton\'> The Silent </label>';
+    _bigString = _bigString + ' </div> </form>';
+    _bigString = _bigString + ' <button type="button" class="btn btn-primary" id=\'cardsButton\' disabled>Create Deck</button> <br />';
+    document.querySelector('#top').innerHTML = _bigString;
+
+    // Set our variables for building
+    deckRemovable = true;
+    var cardsButton = document.querySelector("#cardsButton");
+    var characterSelect = document.querySelector("#characterSelect");
+
+    characterSelect.onchange = function (e) {
+      cardsButton.removeAttribute('disabled');
+      character = e.target.value;
+      deck.character = e.target.value;
+    };
+
+    cardsButton.addEventListener('click', function () {
+      getStarterCards();
+      document.querySelector('#iButton').setAttribute('disabled', true);
+      document.querySelector('#sButton').setAttribute('disabled', true);
+      document.querySelector('#cardsButton').setAttribute('disabled', true);
+    });
+  }
+
+  if (newMode === 'view') {
+    // Give our view deck top
+    var _bigString2 = '<h1>Deck Viewer</h1>';
+    _bigString2 = _bigString2 + ' <h4>Click on a deck to see the cards that are in it</h4>';
+    _bigString2 = _bigString2 + ' <br /> <button type="button" class="btn btn-primary" onclick="changeMode(\'start\');">Back to start</button> <br />';
+    document.querySelector('#top').innerHTML = _bigString2;
+
+    // Set our variables for building
+    deckRemovable = false;
+    sendAjax('GET', '/displayAllDecks');
+  }
+};
+
+// Function to GET a deck to view from the server
+// Called when clicking a deck in the view mode
+var viewDeck = function viewDeck() {
+  var params = 'deck=' + deck.name;
+  sendAjax('GET', '/viewDeck', params);
 };
 
 var init = function init() {
-  var cardsButton = document.querySelector("#cardsButton");
-  var characterSelect = document.querySelector("#characterSelect");
-  nameField = document.querySelector("#nameField");
+  // If there is a cookie, we use it to make our createdDecks array
+  // This means the user has created decks in the past
+  if (document.cookie) createdDecks = document.cookie.split(',');
 
-  characterSelect.onchange = function (e) {
-    cardsButton.removeAttribute('disabled');
-    character = e.target.value;
-  };
-
-  cardsButton.addEventListener('click', getStarterCards);
-
-  nameField.onkeyup = function () {
-    resetDisplayCards();
-    updateDisplayCards();
-    updateCards();
-  };
+  changeMode('start');
 };
 
 window.onload = init;

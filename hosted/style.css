@@ -8,52 +8,92 @@ html, body {
 #top {
   text-align: center;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 #top h1 {
   font-size: 2em;
 }
 
-#content {
-  margin-top: 100px;
-  font-size: 2em;
+#cards {
+  margin-top: 20px;
+  font-size: 20px;
   text-align: center;
 }
 
-.redCard {
+#cardsHeader {
+  margin-top: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#filters {
+  font-size: 16px;
+  text-align: center;
+}
+
+#responses {
+  font-size: 16px;
+  text-align: center;
+}
+
+#deck {
+  margin-top: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.redCards {
   color: white;
   border: 4px solid rgb(156, 42, 45);
   border-radius: 10px;
   background: rgb(74, 58, 57);
   font-size: 18px;
   margin: 8px;
+  cursor: pointer;
 }
 
-.greenCard {
+.greenCards {
   color: white;
   border: 4px solid rgb(75, 136, 60);
   border-radius: 10px;
   background: rgb(69, 72, 56);
   font-size: 18px;
   margin: 8px;
+  cursor: pointer;
 }
 
-.colorlessCard {
+.colorlessCards {
   color: white;
   border: 4px solid rgb(99, 99, 99);
   border-radius: 10px;
   background: rgb(64, 64, 64);
   font-size: 18px;
   margin: 8px;
+  cursor: pointer;
 }
 
-.curseCard {
+.curseCards {
   color: white;
   border: 4px solid rgb(47, 45, 48);
   border-radius: 10px;
   background: rgb(27, 26, 27);
   font-size: 18px;
   margin: 8px;
+  cursor: pointer;
+}
+
+.deckCards {
+  color: black;
+  border: 4px solid black;
+  border-radius: 10px;
+  font-size 14px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
 }
 
 #ironcladButton {

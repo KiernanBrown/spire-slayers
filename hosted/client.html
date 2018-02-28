@@ -10,26 +10,17 @@
 
 <body>
   <section id="top">
-    <h2>Select a character to view cards for them</h2>
-    <form id="characterSelect">
-      <div class="btn-group" data-toggle="buttons">
-        <label id='ironcladButton' class="btn btn-primary">
-          <input type="radio" name="characters" value='ironclad'> The Ironclad
-        </label>
-        <label id='silentButton' class="btn btn-primary">
-          <input type="radio" name="characters" value='silent'> The Silent
-        </label>
-      </div>
-    </form>
-    
-    <label for='cardName'>Filter By Name: </label>
-    <input id='nameField' type='text' name='cardName' disabled/>
-    
-    <br />
-    <button type="button" class="btn btn-primary" id='cardsButton' disabled>Show Cards</button>
+    <h1>Spire Slayers</h1>
+    <h4>Deckbuilding and viewing application for Slay the Spire</h4>
+    <p>Start off by either building your own deck, or viewing decks that other users have created.</p>
+    <button type="button" class="btn btn-primary" id='buildButton'>Build Deck</button> 
+    <button type="button" class="btn btn-primary" id='viewButton'>View Deck</button>
   </section>
-  <section id="content">
-  </section>
+  <section id="deck"></section>
+  <section id="cardsHeader"></section>
+  <section id="filters"></section>
+  <section id="cards"></section>
+  <section id="responses"></section>
 </body>
 
 </html>

@@ -182,6 +182,13 @@
       "Rarity": "Common",
       "Type": "Skill"
     },
+    "Defend": {
+      "Description": "Gain 5 (8) Block. ",
+      "Energy": "1",
+      "Name": "Defend",
+      "Rarity": "Basic",
+      "Type": "Skill"
+    },
     "Deflect": {
       "Description": "Gain 4(6) Block. ",
       "Energy": "0",
@@ -433,6 +440,13 @@
       "Name": "Storm of Steel",
       "Rarity": "Rare",
       "Type": "Skill"
+    },
+    "Strike": {
+      "Description": "Deal 6 (9) damage. ",
+      "Energy": "1",
+      "Name": "Strike",
+      "Rarity": "Basic",
+      "Type": "Attack"
     },
     "Sucker Punch": {
       "Description": "Deal 7 (9) damage. Apply 1 (2) Weak. ",
